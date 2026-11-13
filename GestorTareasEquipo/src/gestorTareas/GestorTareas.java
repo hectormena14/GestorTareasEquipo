@@ -12,8 +12,8 @@ public class GestorTareas {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Gestor de tareas compartido");
-	}
+		System.out.println("Gestor de tareas - versión A");
+		}
 	
 	public static void listarTareas() {
 	    if (tareas.isEmpty()) {
