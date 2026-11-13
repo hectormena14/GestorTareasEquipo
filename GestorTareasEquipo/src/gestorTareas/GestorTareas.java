@@ -12,9 +12,10 @@ public class GestorTareas {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Gestor de tareas - versión A");
-		}
-	
+ 
+		System.out.println("Gestor de tareas - versión A y B");
+	}
+
 	public static void listarTareas() {
 	    if (tareas.isEmpty()) {
 	        System.out.println("No hay tareas registradas");
