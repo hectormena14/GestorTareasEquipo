@@ -11,6 +11,14 @@ public class GestorTareas {
 	    }
 	}
 
+	public static boolean eliminarTarea(int indice) {
+	    if (indice >= 1 && indice <= tareas.size()) {
+	        tareas.remove(indice - 1);
+	        return true;
+	    }
+	    return false;
+	}
+
 	public static void main(String[] args) {
  
 		System.out.println("Gestor de tareas - versión A y B");
