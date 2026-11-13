@@ -20,7 +20,6 @@ public class GestorTareas {
 	}
 
 	public static void main(String[] args) {
- 
 		System.out.println("Gestor de tareas - versión A y B");
 	}
 
@@ -34,5 +33,21 @@ public class GestorTareas {
 	    }
 	}
 
-	
+	public static void buscarTareas(String texto) {
+	    if (texto == null || texto.isBlank()) {
+	        System.out.println("Indica un texto de busqueda");
+	        return;
+	    }
+	    boolean encontrada = false;
+	    for (int i = 0; i < tareas.size(); i++) {
+	        if (tareas.get(i).toLowerCase().contains(texto.toLowerCase())) {
+	            System.out.println((i + 1) + ". " + tareas.get(i));
+	            encontrada = true;
+	        }
+	    }
+	    if (!encontrada) {
+	        System.out.println("No se han encontrado tareas con ese texto");
+	    }
+	}
+
 }
