@@ -21,6 +21,12 @@ public class GestorTareas {
 
 	public static void main(String[] args) {
 		System.out.println("Gestor de tareas - versión A y B");
+		agregarTarea("Preparar la memoria");
+		agregarTarea("Revisar la pull request");
+		agregarTarea("Entregar en Moodle");
+		listarTareas();
+		buscarTareas("moodle");
+
 	}
 
 	public static void listarTareas() {
