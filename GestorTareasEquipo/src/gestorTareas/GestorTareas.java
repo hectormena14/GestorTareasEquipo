@@ -12,7 +12,7 @@ public class GestorTareas {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Gestor de tareas compartido");
+		System.out.println("Gestor de tareas - versión B");
 	}
 	
 	public static void listarTareas() {
